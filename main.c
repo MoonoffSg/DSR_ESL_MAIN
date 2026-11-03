@@ -61,7 +61,7 @@
 #define GROUP_PAUSE_MS 1000  
 
 
-static const uint8_t id[LEDS_NUMBER] = {6, 6, 1, 4};
+static const uint8_t id[LEDS_NUMBER] = {6, 6, 1, 4};  //  #6614
 
 static void blink_led(uint32_t led, uint8_t times)
 {
@@ -85,7 +85,7 @@ int main(void)
             blink_led(i, id[i]);
             nrf_delay_ms(GROUP_PAUSE_MS);
         }
-        nrf_delay_ms(2000); // пауза перед повтором всей последовательности
+        nrf_delay_ms(2000); 
     }
 }
 /**
